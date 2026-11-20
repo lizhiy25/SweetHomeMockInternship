@@ -602,6 +602,14 @@ public class CatalogPieceOfFurniture implements Comparable<CatalogPieceOfFurnitu
   }
 
   /**
+   * Returns the volume calculated from the current dimensions.
+   */
+  @Override
+  public float getVolume() {
+    return getWidth() * getDepth() * getHeight();
+  }
+
+  /**
    * Returns the width of this piece of furniture.
    */
   public float getWidth() {
